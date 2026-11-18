@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bâti Energy by christa — Répertoire réglementaire</title>
+<meta name="description" content="Maquette du répertoire des textes officiels de la performance énergétique et environnementale des bâtiments.">
+<link rel="icon" type="image/png" href="brand-mark.png">
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script>
+<script defer src="editorial.js"></script>
+<script defer src="careers.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><div class="wrap top"><a href="./" class="brand"><img src="brand-mark.png" alt="" width="49" height="49"><span class="brand-name">Bâti Energy <small>by christa</small></span></a><nav class="site-nav" aria-label="Navigation principale"><a href="#articles">Articles</a><a href="#textes">Répertoire</a><a href="#cee">Fiches CEE</a><a href="#outils">Outils</a><a href="#metiers">Métiers</a><a href="#contact">Nous contacter</a></nav></div></header>
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div><p class="eyebrow">PERFORMANCE ÉNERGÉTIQUE DU BÂTIMENT</p><h1>Énergie Bâtiment <em>by Christa</em></h1>
+<p class="intro">Quel texte s’applique à votre bâtiment ? Comment suivre les consommations après les travaux ? Des articles sourcés pour passer de la réglementation à l’exploitation.</p>
+<a class="primary" href="#articles">Lire les articles ↓</a></div>
+<div class="hero-index"><p>Par où commencer ?</p><a href="#article-1">Je loue ou je vends un bien <span>↗</span></a><a href="#article-2">J’exploite un bâtiment tertiaire <span>↗</span></a><a href="#article-4">Je mets en place l’ISO 50001 <span>↗</span></a></div>
+</div></section>
+<section id="articles" class="wrap editorial" aria-labelledby="article-title">
+<h2 id="article-title">Articles et retours de terrain</h2>
+<div class="editorial-tabs" id="article-filters" aria-label="Filtrer les articles"></div>
+<div class="editorial-grid" id="article-cards"></div>
+</section>
+<dialog id="reader" aria-labelledby="reader-title"><form method="dialog"><button aria-label="Fermer l’article">Fermer ×</button></form><div id="reader-body"></div></dialog>
+<div class="wrap directory" id="textes"><h2>Répertoire des textes officiels</h2><p>Inventaire en cours · France et Union européenne</p></div>
+<div class="wrap workspace">
+<aside><h2>Par situation</h2><nav id="situations" aria-label="Situations"></nav><details class="coverage"><summary>Couverture à compléter</summary><ul id="gaps"></ul></details></aside>
+<section aria-labelledby="results-title">
+<label for="query">Rechercher un texte ou un article</label>
+<input id="query" type="search" placeholder="Ex. BACS, toiture, R. 174-22">
+<div class="filters">
+<div><label for="theme">Thème</label><select id="theme"><option value="">Tous les thèmes</option></select></div>
+<div><label for="source">Source officielle</label><select id="source"><option value="">Toutes les sources</option><option>Légifrance</option><option>EUR-Lex</option></select></div>
+<button id="reset" type="button">Réinitialiser</button>
+</div>
+<div class="results-head"><h2 id="results-title">Textes et articles</h2><p id="count" role="status"></p></div>
+<div id="results"></div>
+</section>
+</div>
+<section id="cee" class="wrap editorial careers" aria-labelledby="cee-title">
+<h2 id="cee-title">Fiches CEE actives</h2>
+<p>Retrouvez les opérations standardisées d’économies d’énergie et les conditions à vérifier avant d’engager les travaux. Exemples consultés le 18 novembre 2026.</p>
+<p><a class="primary" href="https://www.ecologie.gouv.fr/politiques-publiques/operations-standardisees-deconomies-denergie">Consulter le catalogue officiel ↗</a></p>
+<h3>Comment accéder aux fiches et préparer son dossier</h3>
+<ol><li>Identifier le secteur et les travaux. Dans le catalogue ministériel, cherchez le code de l’opération et ouvrez la fiche ainsi que le cadre A correspondant.</li>
+<li>Vérifier la version pour la date d’engagement. En cas de modification ou de suppression, lire l’arrêté modificatif et ses éventuelles dispositions transitoires.</li>
+<li>Lire les conditions avant de vous engager. Vérifiez le bâtiment et le territoire concernés, les performances minimales, la qualification du professionnel et les justificatifs demandés.</li>
+<li>Organiser le dossier en amont. Pour un logement, comparez les offres CEE et obtenez l’engagement du fournisseur ou de son partenaire avant de signer le devis. Pour un site professionnel, prenez contact avec l’opérateur CEE avant de passer commande pour cadrer l’incitation et les pièces du dossier.</li></ol>
+<h3>Trois exemples et leurs critères clés</h3>
+<div class="editorial-grid"><article><span class="theme">BAR-EN-101</span><h3>Résidentiel · Isolation de combles ou de toiture</h3><p>Bâtiment résidentiel existant. Pour l’isolant posé, R ≥ 7 m²·K/W en combles perdus ou ≥ 6 en rampants. Le professionnel réalise la visite technique avant l’établissement du devis. La fiche prévoit aussi une qualification et un délai minimal de sept jours francs entre acceptation du devis et début de la pose. Abrogation prévue le 1er mai 2027.</p><a href="https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-101%20vA64-6%20%C3%A0%20compter%20du%2001-01-2025_1.pdf">Fiche officielle (PDF) ↗</a></article>
+<article><span class="theme">BAT-EN-102</span><h3>Tertiaire · Isolation des murs</h3><p>Locaux tertiaires existants réservés à un usage professionnel. Doublage isolant posé par un professionnel, par l’intérieur ou l’extérieur. R ≥ 3,7 m²·K/W. Vérifier les mentions exigées sur la preuve de réalisation, notamment la surface et la résistance thermique. Abrogation prévue le 1er mai 2027.</p><a href="https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-EN-102%20vA64-3%20%C3%A0%20compter%20du%2001-01-2025_2.pdf">Fiche officielle (PDF) ↗</a></article>
+<article><span class="theme">BAT-TH-116</span><h3>Tertiaire · Gestion technique du bâtiment</h3><p>Le cadre A publié par le ministère vérifie notamment que le bâtiment tertiaire existe depuis plus de deux ans à l’engagement et que le système installé atteint la classe A ou B au sens de la NF EN ISO 52120-1:2022. Consultez la fiche pour le périmètre des usages et la preuve de réalisation.</p><a href="https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-TH-116%20vA62-6%20%C3%A0%20compter%20du%2001-01-2025%20-%20Partie%20A%20%C3%A0%20compter%20du%2001-07-2026.pdf">Cadre A officiel (PDF) ↗</a><a href="https://www.ecologie.gouv.fr/politiques-publiques/operations-standardisees-deconomies-denergie#:~:text=BAT-TH-116%20vA62-6">Retrouver la fiche dans le catalogue ↗</a></article></div>
+<h3>Textes et aides</h3><ul><li><a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000030077390">Arrêté du 22 décembre 2014 ↗</a></li>
+<li><a href="https://www.legifrance.gouv.fr/loda/id/LEGITEXT000055022045">Arrêté du 26 octobre 2026 sur les suppressions ↗</a></li>
+<li><a href="https://mesaides.france-renov.gouv.fr/aides/cee">France Rénov’ · aide CEE pour les logements ↗</a></li>
+<li><a href="https://agirpourlatransition.ademe.fr/entreprises/aides-financieres">ADEME · aides financières aux entreprises ↗</a></li></ul>
+</section>
+<section id="outils" class="wrap editorial careers" aria-labelledby="tools-title">
+<h2 id="tools-title">Outils de management de l’énergie</h2><p class="career-note">Les chiffres ci-dessous donnent un ordre de grandeur, d’après les éditeurs. Sites, clients, organisations et surfaces désignent des périmètres différents. Les sources consultées ne permettent pas d’établir des parts de marché comparables.</p>
+<div class="editorial-grid"><article><span class="theme">Immobilier multisite</span><h3>Deepki</h3><p>Collecte des données, courbes de charge, reporting et gestion de la durabilité à l’échelle d’un portefeuille.</p><p><strong>Plus de 600 clients dans plus de 90 pays, selon Deepki.</strong></p><a href="https://www.deepki.com/fr/clients/">Source éditeur ↗</a></article>
+<article><span class="theme">Entreprises et collectivités</span><h3>Datanumia · iBoard</h3><p>Suivi multisite et multifluide. Le prestataire propose aussi de l’instrumentation et des services de management de l’énergie.</p><p><strong>Plus de 70 000 clients professionnels et 120 millions de m² sous hypervision pour l’offre entreprises et collectivités, selon Datanumia.</strong></p><a href="https://www.datanumia.com/fr/entreprises-et-collectivites">Source éditeur ↗</a></article>
+<article><span class="theme">Suivi énergétique des bâtiments</span><h3>Spacewell Energy · ex-Dexma</h3><p>Analyse des consommations et suivi de la performance d’un parc.</p><p><strong>Plus de 10 000 organisations dans plus de 35 pays, selon Spacewell.</strong></p><a href="https://spacewell.com/dexma/">Source éditeur ↗</a></article>
+<article><span class="theme">Logiciel et accompagnement</span><h3>advizeo · Hager Group</h3><p>Suivi énergétique avec accompagnement des exploitants et déploiement de capteurs selon le projet.</p><p><strong>Plus de 250 clients depuis sa création, selon son dossier de presse 2026.</strong></p><a href="https://www.advizeo.io/wp-content/uploads/2026/03/DOSSIER-DE-PRESSE-2026.pdf">Source éditeur ↗</a></article>
+<article><span class="theme">Logiciel et conseil</span><h3>Citron</h3><p>Collecte de données bâtiment, suivi des consommations et accompagnement de projets. L’éditeur publie notamment un retour sur l’aéroport Paris-Beauvais.</p><p><strong>Cas clients publiés par l’éditeur.</strong></p><a href="https://citron.io/ressources/">Source éditeur ↗</a></article>
+<article><span class="theme">Données et mesure des économies</span><h3>Energisme · N’Gage</h3><p>Croise les données de comptage et des variables comme la météo ou les horaires pour comparer les consommations avant et après une action.</p><p><strong>Guide de mesure et vérification publié par l’éditeur.</strong></p><a href="https://energisme.com/wp-content/uploads/2025/04/Guide-IPMVP-2025-1.pdf">Source éditeur ↗</a></article>
+<article><span class="theme">Énergie et durabilité à l’échelle d’un groupe</span><h3>Schneider Electric · EcoStruxure Resource Advisor</h3><p>Agrège les données énergie et durabilité de plusieurs entités. À examiner si les équipes énergie et RSE ont besoin d’un même référentiel.</p><p><strong>Plateforme internationale. Aucun chiffre de déploiement comparable retenu pour ce produit.</strong></p><a href="https://www.se.com/ww/en/work/services/se-advisory-services/intelligent-software/resource-advisor/">Source éditeur ↗</a></article></div>
+<h3>Comparer sur un cas réel</h3><p>Demandez une démonstration sur un site avec plusieurs compteurs : importer les factures et les courbes de charge, signaler une donnée manquante, détecter une dérive nocturne, l’attribuer et vérifier l’effet du réglage. Comparez aussi les coûts des connecteurs, le support et la récupération de l’historique à la sortie du contrat.</p>
+<h3>Du compteur à l’action</h3><p>Un logiciel de suivi aide à analyser les consommations. Une GTB commande les installations. OPERAT est la plateforme de déclaration réglementaire du dispositif Éco Énergie Tertiaire. Pour l’ISO 50001, vérifiez que l’outil vous aide à documenter les indicateurs, la référence et les actions du système de management.</p>
+<p><strong>Cas terrain.</strong> Pierre &amp; Vacances-Center Parcs utilise Deepki pour automatiser le suivi de l’eau et de l’énergie. L’éditeur indique plus de 6 700 compteurs dans son étude de cas. <a href="https://www.deepki.com/fr/customers/pierre-vacances-center-parcs-optimise-le-pilotage-energetique-de-ses-batiments-grace-a-deepki/">Lire le retour d’expérience ↗</a></p>
+<p><a href="https://www.ecologie.gouv.fr/politiques-publiques/eco-energie-tertiaire-eet">Éco Énergie Tertiaire et OPERAT · ministère ↗</a> · <a href="https://www.leadersleague.com/en/rankings/energie-and-environnement-simulation-bilan-et-gestion-editeur-de-logiciels-france-2025">Panorama français des éditeurs · Leaders League 2025 ↗</a></p>
+</section>
+<section id="metiers" class="wrap editorial careers" aria-labelledby="career-title">
+<h2 id="career-title">Les métiers de la performance énergétique</h2>
+<p>Du chantier à la direction technique. Explorez les missions, les formations et les rémunérations observées en France.</p>
+<p class="career-note">Repères bruts consultés en novembre 2026. Onisep indique des salaires de début de carrière. Apec publie des statistiques par famille et, comme France Travail, des offres individuelles dont les montants correspondent à un poste précis. Dans le public, le traitement indiciaire dépend du grade et de l’échelon. Les primes s’ajoutent selon la situation.</p>
+<div class="editorial-tabs" id="career-filters" aria-label="Filtrer les métiers"></div>
+<div class="editorial-grid" id="career-cards"></div>
+</section>
+<section id="contact" class="wrap contact" aria-labelledby="contact-title">
+<div><h2 id="contact-title">Nous contacter</h2><p>Une question sur un article, une référence à corriger ou un projet à partager ? Écrivez à Christa.</p><a id="email-link" class="primary" hidden>Écrire à Christa ↗</a><p id="email-status">Adresse de contact en attente.</p></div>
+<details><summary>Aperçu du message</summary><p id="email-subject"></p><pre id="email-body"></pre></details>
+</section>
+</main>
+<footer><div class="wrap">Bâti Energy by christa · <a href="https://app.notion.com/p/41c28054d79c813cb180ed135a1b7a17?pvs=204">Répertoire Notion ↗</a></div></footer>
+</body>
+</html>
